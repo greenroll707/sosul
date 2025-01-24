@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root{
+            --width: 1920px;
+            --primary : rgb(158, 6, 6);
+            --smWidth : 320px;
+            --mdWidth : 600px;
+            --fontSize : 54px;
+            --smFontSize : 22px;
+            --mdFontSize : 36px;
+        }
+
+        li{ list-style: none; margin: 0 15px; position: relative;}
+        a{ color:black; text-decoration: none;}
+        ul{ display: flex; }
+
+        a:hover{
+            color:var(--primary, rgb(158, 6, 6))
+        }
+
+        li:before{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color:white;
+            right: 0;
+            bottom: 70%;
+            transition: 0.5s;
+        }
+
+        li:hover:before{
+
+            background-color: var(--primary,rgb(150,4,4));
+            bottom: 100%;
+        }
+
+        li:after{
+            content: ""; /**/
+            display: block; 
+            height: 3px;
+            background-color: var(--primary, rgb(158, 6, 6));
+            width:0;
+            transition: 0.5s;
+            color: var(--primary, rgb(158, 6, 6))
+        }
+    
+        li:hover:after{
+            width:100%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">리스트들</a></li>
+        <li><a href="">리스트들</a></li>
+        <li><a href="">리스트들</a></li>
+        <li><a href="">리스트들</a></li>
+        <li><a href="">리스트들</a></li>
+
+    </ul>
+
+</body>
+
+</html>

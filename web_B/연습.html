@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --kcecolor: rgb(150,5,5);
+
+        
+    }
+
+    li:hover{
+        background-color: yellow;
+    }
+
+    ul:after{
+        content: "완료";
+    }
+    
+    *:after{
+        content: ".";
+    }
+
+    ul#gnb li:first-child:before{
+        content: "시작";
+    }
+    #gnb > li:nth-child(2) {
+            border: 2px solid blue; 
+            background-color: gray;
+            padding: 5px; /* 테두리 안쪽 여백 */
+        }
+
+    a[href=""]{
+        display: none;
+    }
+    /* 링크가 없는 a태그는 화면 노출 하지마 */
+
+    img[src$="logo.svg"]{
+        height: 3rem;
+    } 
+    /* 이미지 소스가 logo.svg인 경우 높이 3rem */
+
+img[src$=".jpg"]{
+    display: none;
+}
+
+</style>
+<body>
+    <ul>
+        <li><a href="">리스트</a></li>
+        <li><a href="">리스트</a></li>
+        <li><a href="">리스트</a></li>
+        <li><a href="">리스트</a></li>
+        <li><a href="">리스트</a></li>
+    </ul>
+</body>
+</html>

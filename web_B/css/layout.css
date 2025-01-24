@@ -1,0 +1,85 @@
+body, ul, li, div, p, h1, h2, header, footer{
+    padding: 0;
+    margin: 0;
+    color:#333;
+}
+li{
+    list-style: none;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.d-flex{
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.aic{ 
+    align-items: center;
+}
+.aie{
+    align-items: flex-end;
+}
+.d1a{
+    font-size: 22px;
+    padding: 0 20px;
+    line-height: 100px;
+    background-color: #333;
+    color: white;
+}
+.d1a:hover{
+    background-color: white;
+    color: #333;
+}
+
+.d2ul{
+    background-color: #333;
+    left: 0;
+    min-width: 140px;
+    line-height: 50px;
+    top: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.d2a{
+    color: white;
+}
+
+.d1li1 .d2ul,
+.d1li3 .d2ul{
+    background-color: orange;
+} 
+.d1li1 .d2ul{
+    min-width: 280px;
+    left: -150px;
+}
+.d1li:hover .d2ul{
+    max-height: 200px;
+}
